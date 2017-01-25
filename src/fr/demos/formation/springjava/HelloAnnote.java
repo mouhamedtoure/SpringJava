@@ -1,7 +1,12 @@
 package fr.demos.formation.springjava;
 
-public class Hello {
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Component;
+
+@Component("helloAnnoteId")
+public class HelloAnnote {
 	
+	@Autowired
 	private Message message;
 
 	public Message getMessage() {

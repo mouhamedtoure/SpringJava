@@ -8,10 +8,10 @@ public class Main {
 	
 		
 		// Lance Spring (charge la config de Spring)
-		ClassPathXmlApplicationContext context= new ClassPathXmlApplicationContext("beans.xml");
+		ClassPathXmlApplicationContext context= new ClassPathXmlApplicationContext("context.xml");
 		
 		// Demande a Spring de fournir une instance d'un bean
-		Hello obj =  (Hello) context.getBean("helloId");
+		HelloAnnote obj =  (HelloAnnote) context.getBean("helloAnnoteId");
 		System.out.println(obj.sayHello());
 		context.close();
 	}

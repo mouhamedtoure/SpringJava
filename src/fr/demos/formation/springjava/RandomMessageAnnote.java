@@ -2,8 +2,10 @@ package fr.demos.formation.springjava;
 
 import java.util.Random;
 
+import org.springframework.stereotype.Component;
 
-public class RandomMessage implements Message {
+@Component("messageAnnoteId")
+public class RandomMessageAnnote implements Message {
 
 	@Override
 	public String getText() {
