@@ -11,7 +11,7 @@ public class Main {
 		ClassPathXmlApplicationContext context= new ClassPathXmlApplicationContext("beans.xml");
 		
 		// Demande a Spring de fournir une instance d'un bean
-		Hello obj = (Hello) context.getBean("helloId");
+		Hello obj =  (Hello) context.getBean("helloId");
 		System.out.println(obj.sayHello());
 		context.close();
 	}

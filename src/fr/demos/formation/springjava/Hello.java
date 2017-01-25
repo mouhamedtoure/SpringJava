@@ -1,12 +1,25 @@
 package fr.demos.formation.springjava;
 
-import org.springframework.stereotype.Component;
-
-@Component("helloId")
+//  @Component("helloId")
 public class Hello {
+	
+	private Message message;
 
-	public String sayHello() {
-		return "Hello World!";
+	public Message getMessage() {
+		return message;
 	}
 
+	public void setMessage(Message message) {
+		this.message = message;
+	}
+
+	
+	public String sayHello(){
+		
+		return message.getText();
+		
+		
+	}
+	
+	
 }

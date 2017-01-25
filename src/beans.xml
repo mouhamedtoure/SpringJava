@@ -11,6 +11,13 @@
 
 <!--  	<bean id="helloId" class="fr.demos.formation.springjava.Hello"> 
 	</bean> -->
-	<context:component-scan base-package="fr.demos.formation.springjava"></context:component-scan> 
+	<bean id="helloId" class="fr.demos.formation.springjava.Hello">
+		<property name ="message" ref="messageId" ></property>
+    </bean>
+	<bean id="messageId" class="fr.demos.formation.springjava.MessageImpl"> 
+
+	</bean>
+	
+<!--	<context:component-scan base-package="fr.demos.formation.springjava"></context:component-scan> --> 
 	
 </beans>
