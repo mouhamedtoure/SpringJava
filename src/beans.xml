@@ -14,7 +14,7 @@
 	<bean id="helloId" class="fr.demos.formation.springjava.Hello">
 		<property name ="message" ref="messageId" ></property>
     </bean>
-	<bean id="messageId" class="fr.demos.formation.springjava.MessageImpl"> 
+	<bean id="messageId" class="fr.demos.formation.springjava.RandomMessage"> 
 
 	</bean>
 	
